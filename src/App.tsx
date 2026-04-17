@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import { LanguageProvider } from '@/context/LanguageContext';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -10,10 +11,17 @@ import ONamaPage from '@/pages/ONamaPage';
 import KontaktPage from '@/pages/KontaktPage';
 import NotFoundPage from '@/pages/NotFoundPage';
 
+function ScrollToTop() {
+    const { pathname } = useLocation();
+    useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+    return null;
+}
+
 export default function App() {
     return (
         <LanguageProvider>
             <BrowserRouter>
+                <ScrollToTop />
                 <Header />
                 <main>
                     <Routes>
