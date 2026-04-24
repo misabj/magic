@@ -8,32 +8,95 @@ export default function ONamaPage() {
     const T = {
         sr: {
             heroTag: "Ko smo mi",
-            heroTitle: "O Brendu",
-            missionQuote: '"Naša misija je da napravimo kozmetiku koja ne može da se poredi ni sa jednom jer je jedinstvena u svakom pogledu."',
-            p1: "Magic Crystals je nastao iz želje da se napravi nešto istinski drugačije. Vodili smo računa da što više supstanci budu iz organskog uzgoja a ostale supstance budu procentualno u preparatima po zakonu EU.",
-            p2: "Pakovanja za preparate su dizajnirana i izrađena od vrhunskog kvaliteta i jedinstvena u svetu kozmetike. Jedinstveni smo po eliksiru od kristala koji je sastavni deo svakog proizvoda — eliksir je napravljen uz pomoć američkog aparata koji je jedinstven u svetu po svojim frekvencijama. Ishli smo i korak dalje pa smo u eliksir ubacivali i potencije homeopatije.",
+            heroTitle: "O Brendu - Magic Crystals",
+            missionQuote: `U svetu gde lepota često znači brza rešenja, Magic Crystals je nastao iz drugačije filozofije –da prava, dugotrajna lepota dolazi iz balansa, znanja i dubokog razumevanja kože. `,
+                p1: `Naš brend nije samo
+            kozmetika. To je spoj prirode, nauke i iskustva iz profesionalnih tretmana, razvijen kroz rad u salonima i
+direktan kontakt sa klijentima i njihovim stvarnim potrebama.`,
+                p2: `
+                Naša misija je da ženama vratimo poverenje u svoju kožu –
+                bez filtera, bez agresivnih metoda i bez kompromisa.
+                Jer prava lepota nije savršena –ona je negovana, zdrava i autentična.`,
             valuesTitle: "Naši standardi",
             values: [
-                { title: "EU standardi", desc: "Svi preparati su ručno izrađeni u laboratoriji sa EU sertifikatom, u staklenoj ambalaži sa pumpicama uvezenim iz Holandije visokog kvaliteta." },
-                { title: "Organski uzgoj", desc: "Većina supstanci koje koristimo je iz organskog uzgoja. Strogo vodimo računa da procentualni sastav bude po zakonu EU, bez kompromisa." },
-                { title: "Eliksir od kristala", desc: "Jedinstveni u svetu po eliksiru od kristala koji je sastavni deo svakog preparata. Napravljen uz pomoć američkog aparata posebnih frekvencija i potencija homeopatije." },
-                { title: "Trajni efekti", desc: "Prirodne supstance odmah po prodiranju u kožu kreću da deluju i daju rezultate. Daje trajne i dugotrajne efekte bez zavisnosti." },
+                { title: "Naša filozofija:", desc: ` Verujemo da koža ne traži agresiju – već inteligentan pristup.Zato stvaramo formule koje:
+                ✔ poštuju prirodnu strukturu kože
+                ✔ obnavljaju, a ne oštećuju
+                ✔ daju vidljive rezultate bez kompromisa
+                Svaki proizvod razvijen je sa idejom da kožu dovede u ravnotežu, a ne da prikrije problem.` },
+                {
+                    title: "Snaga formule:", desc: `Magic Crystals proizvodi kombinuju:
+                ✔ prirodna biljna ulja i ekstrakte
+                ✔ biotehnološke aktivne sastojke
+                ✔ napredne dermokozmetičke formule
+                Naša posebnost je u tome što proizvodi nisu kreirani samo za kućnu negu, već su deo profesionalnih
+                tretmanskih protokola, gde postižu maksimalne rezultate.
+                    ` },
+                {
+                    title: "Rezultati koje vidite i osećate", desc: `Naša kozmetika je osmišljena da:
+                ✔ dubinski hidrira i regeneriše
+                ✔ poboljša tonus i elastičnost kože
+                ✔ deluje anti-age bez invazivnih metoda
+                ✔ vrati koži prirodan sjaj i zdrav izgled
+                Svaki proizvod ima svoju svrhu – ali zajedno stvaraju kompletan sistem nege.
+                    ` },
+                {
+                    title: "Naš pristup klijentima", desc: ` Ne verujemo u univerzalna rešenja.Svaka koža je drugačija – i zato je naš cilj da pronađemo idealnu
+                kombinaciju proizvoda i tretmana za svaku klijentkinju.
+                Magic Crystals je tu da pruži:
+                ✔ sigurnost
+                ✔ kvalitet
+                ✔ rezultate koji traju
+                ✔ Naša misija
+                    ` },
             ],
         },
         en: {
-            heroTag: "Who we are",
-            heroTitle: "About the Brand",
-            missionQuote: '"Our mission is to create cosmetics that cannot be compared to any other because it is unique in every way."',
-            p1: "Magic Crystals was born from a desire to create something truly different. We ensure that as many substances as possible come from organic farming, and the remaining substances are in formulations according to EU law.",
-            p2: "The product packaging is designed and manufactured with premium quality, unique in the world of cosmetics. We are unique for our crystal elixir, which is an integral part of every product — the elixir is made using an American device that is unique in the world for its frequencies. We went a step further and also infused homeopathic potencies into the elixir.",
-            valuesTitle: "Our Standards",
-            values: [
-                { title: "EU Standards", desc: "All products are handcrafted in an EU-certified laboratory, in glass packaging with pumps imported from the Netherlands." },
-                { title: "Organic farming", desc: "Most of the substances we use are from organic farming. We strictly ensure the percentage composition complies with EU law, without compromise." },
-                { title: "Crystal Elixir", desc: "Unique in the world for the crystal elixir that is integral to every product. Made with an American device of special frequencies and homeopathic potencies." },
-                { title: "Lasting effects", desc: "Natural substances begin to work and produce results immediately upon penetrating the skin. Gives lasting and long-term effects without dependency." },
-            ],
+    heroTag: "Who we are",
+    heroTitle: "About the Brand - Magic Crystals",
+    missionQuote: `In a world where beauty often means quick fixes, Magic Crystals was born from a different philosophy – true, long-lasting beauty comes from balance, knowledge, and a deep understanding of the skin.`,
+    p1: `Our brand is not just cosmetics. It is a fusion of nature, science, and experience from professional treatments, developed through work in salons and direct contact with clients and their real needs.`,
+    p2: `
+    Our mission is to restore women’s confidence in their skin –
+    without filters, without aggressive methods, and without compromise.
+    Because true beauty is not perfect – it is cared for, healthy, and authentic.`,
+    valuesTitle: "Our Standards",
+    values: [
+        { 
+            title: "Our Philosophy:", 
+            desc: `We believe that skin does not need aggression – but an intelligent approach. That is why we create formulas that:
+            ✔ respect the natural structure of the skin
+            ✔ restore rather than damage
+            ✔ deliver visible results without compromise
+            Each product is developed with the idea of bringing the skin into balance, not masking the problem.` 
         },
+        {
+            title: "The Power of the Formula:", 
+            desc: `Magic Crystals products combine:
+            ✔ natural plant oils and extracts
+            ✔ biotechnological active ingredients
+            ✔ advanced dermocosmetic formulas
+            Our uniqueness lies in the fact that the products are not created only for home care, but are part of professional treatment protocols, where they achieve maximum results.`
+        },
+        {
+            title: "Results You Can See and Feel", 
+            desc: `Our cosmetics are designed to:
+            ✔ deeply hydrate and regenerate
+            ✔ improve skin tone and elasticity
+            ✔ provide anti-age effects without invasive methods
+            ✔ restore the skin’s natural glow and healthy appearance
+            Each product has its purpose – but together they create a complete skincare system.`
+        },
+        {
+            title: "Our Approach to Clients", 
+            desc: `We do not believe in universal solutions. Every skin is different – which is why our goal is to find the ideal combination of products and treatments for each client.
+            Magic Crystals is here to provide:
+            ✔ safety
+            ✔ quality
+            ✔ long-lasting results`
+        },
+    ],
+},
     }[lang];
 
     return (

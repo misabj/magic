@@ -22,7 +22,7 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
                         src={product.image}
                         alt={product.name}
                         loading="lazy"
-                        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+                        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectViewBox: 'inset(12%)' }}
                         className="transition-transform duration-700 group-hover:scale-[1.04]"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

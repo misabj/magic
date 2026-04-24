@@ -136,7 +136,7 @@ export default function ProductDetailPage() {
                             <div>
                                 <h2 className="text-[#F5F0E8] text-2xl font-light uppercase tracking-wider mb-4" style={{ fontFamily: 'var(--font-cormorant)' }}>{T.description}</h2>
                                 <div className="h-[1px] w-8 bg-[#A07848] mb-5" />
-                                <p className="text-[#8A8A8A] text-sm font-light leading-relaxed" style={{ fontFamily: 'var(--font-inter)' }}>{product.description}</p>
+                                <p className="text-[#8A8A8A] text-sm font-light leading-relaxed whitespace-pre-line" style={{ fontFamily: 'var(--font-inter)' }}>{product.description}</p>
                             </div>
                         </Reveal>
 

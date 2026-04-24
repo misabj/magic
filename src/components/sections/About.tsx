@@ -7,26 +7,44 @@ export default function About() {
 
     const T = {
         sr: {
-            tag: "Naša filozofija",
-            titleLine1: "Kozmetika koja",
-            titleLine2: "deluje iznutra",
-            p1: "Magic Crystals je urađen po standardima EU. Strogo vodimo računa o supstancama koje koristimo — većina je iz organskog uzgoja. Svi preparati su ručno izrađeni u laboratoriji sa EU sertifikatom, u staklenoj ambalaži sa pumpicama uvezenim iz Holandije.",
+            tag: "Era napredne, prirodne kozmetologije",
+            titleLine1: "MAGIC",
+            titleLine2: "CRYSTALS",
+            p1: `Magic Crystals je 100% prirodna kozmetika nove generacije, kreirana da ne neguje samo površinu kože – već da    pokrene njenu dubinsku regeneraciju, obnovu i vidljivu transformaciju. 
+
+            Naše formule nastaju kao spoj prirodnih aktivnih sastojaka, savremene kozmetologije i precizno razvijenih protokola rada.
+
+            Rezultat je koža koja je zategnutija, hidrirana, osvežena i vidljivo podmlađena – bez agresivnih metoda i bez kompromisa.
+
+            Magic Crystals se danas koristi u preko 100 zemalja širom sveta, kao pouzdan izbor profesionalaca koji žele vrhunske rezultate i potpuno prirodan pristup lepoti. 
+
+            Posebnu vrednost čine naši specijalizovani tretmani, razvijeni da ciljano rešavaju potrebe svake kože – od dubinske hidratacije i anti-age efekta, do regeneracije, čišćenja i vraćanja prirodnog sjaja. 
+
+            Svaki tretman je pažljivo osmišljen kao jedinstveno iskustvo koje spaja luksuz, stručnost i vidljive rezultate.`,
             crystalText: "eliksiru od kristala",
             pillars: [
                 { symbol: "EU", title: "EU Standardi", desc: "Svi preparati ručno izrađeni u sertifikovanoj laboratoriji" },
-                { symbol: "◈", title: "Eliksir od Kristala", desc: "Jedinstven u svetu — američki aparat posebnih frekvencija" },
                 { symbol: "✦", title: "100% Prirodno", desc: "Organski uzgoj, staklena ambalaža, bez kompromisa" },
             ],
         },
         en: {
-            tag: "Our Philosophy",
-            titleLine1: "Cosmetics that",
-            titleLine2: "work from within",
-            p1: "Magic Crystals is made to EU standards. We carefully select our substances — most sourced from organic farming. All products are handcrafted in an EU-certified laboratory, in glass packaging with pumps imported from the Netherlands.",
+            tag: "The era of advanced, natural cosmetology",
+            titleLine1: "MAGIC",
+            titleLine2: "CRYSTALS",
+            p1: `Magic Crystals is a 100% natural, next-generation skincare line, created not only to care for the surface of the skin — but to stimulate its deep regeneration, renewal, and visible transformation.
+
+            Our formulas are developed as a fusion of natural active ingredients, modern cosmetology, and precisely designed treatment protocols.
+
+            The result is skin that is firmer, hydrated, refreshed, and visibly rejuvenated — without aggressive methods and without compromise.
+
+            Today, Magic Crystals is used in over 100 countries worldwide, as a trusted choice of professionals who seek premium results and a completely natural approach to beauty.
+
+            Our specialized treatments bring additional value, carefully developed to target the unique needs of every skin type — from deep hydration and anti-aging effects to regeneration, cleansing, and restoring the skin’s natural glow.
+
+            Each treatment is thoughtfully designed as a unique experience that combines luxury, expertise, and visible results.`,
             crystalText: "crystal elixir",
             pillars: [
                 { symbol: "EU", title: "EU Standards", desc: "All products handcrafted in an EU-certified laboratory" },
-                { symbol: "◈", title: "Crystal Elixir", desc: "Unique worldwide — American frequency device" },
                 { symbol: "✦", title: "100% Natural", desc: "Organic farming, glass packaging, no compromises" },
             ],
         },
@@ -57,13 +75,13 @@ export default function About() {
                         </Reveal>
                         <Reveal delay={0.2}><div className="h-[1px] w-16 bg-[#C4956A] mb-8" /></Reveal>
                         <Reveal delay={0.25}>
-                            <p className="text-white/55 text-base font-light leading-[1.9] mb-6" style={{ fontFamily: 'var(--font-inter)' }}>{T.p1}</p>
+                            <p className="text-white/55 text-base font-light leading-[1.9] mb-6 whitespace-pre-line" style={{ fontFamily: 'var(--font-inter)' }}>{T.p1}</p>
                         </Reveal>
                         <Reveal delay={0.3}>
                             <p className="text-white/55 text-base font-light leading-[1.9] mb-12" style={{ fontFamily: 'var(--font-inter)' }}>
                                 {lang === "sr"
-                                    ? <>Jedinstveni smo po <strong className="font-medium text-white">{T.crystalText}</strong> koji je sastavni deo svakog preparata — napravljen uz pomoć američkog aparata jedinstvenog u svetu po frekvencijama. U eliksir ubacujemo i potencije homeopatije. Ovo je napredna prirodna kozmetika koja tek ulazi u svet kozmetologije.</>
-                                    : <>We are unique in our <strong className="font-medium text-white">{T.crystalText}</strong>, a component of every product — created using an American device unique in the world for its frequencies. We also infuse homeopathic potencies into the elixir. This is advanced natural cosmetics only now entering the world of cosmetology.</>
+                                    ? <>Jer prava lepota ne dolazi spolja – ona se aktivira.</>
+                                    : <>Because true beauty doesn’t come from the outside — it is activated.</>
                                 }
                             </p>
                         </Reveal>

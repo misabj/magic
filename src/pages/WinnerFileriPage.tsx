@@ -4,21 +4,21 @@ import CtaBanner from '@/components/sections/CtaBanner';
 import { useLanguage } from '@/context/LanguageContext';
 
 const fillersSr = [
-    { name: 'Vitaminska Bomba', nameEn: 'Winner Filler', formula: 'Hijaluron 2%', desc: 'Vitaminski koktel: kompleks vitamina, elastin i ekstrakti algi. Sjaj i mladalački izgled.', ingredients: 'Hijaluron 2%, kompleks vitamina sa elastinom i ekstraktima algi' },
-    { name: 'Anti-Age', nameEn: 'Anti Age Filler', formula: 'Hijaluron 5%', desc: 'Najjači filer — hijaluron 5% i gel crvenih algi. Popunjava bore, lifting efekat.', ingredients: 'Hijaluron 5%, gel crvenih algi' },
-    { name: 'Duboka Hidratacija', nameEn: 'Deep Hydration', formula: 'Hijaluron 2%', desc: 'Intenzivna hidratacija: kolagen, elastin, vitamin C i ekstrakti zobi, crnog sleza i vučjeg trna.', ingredients: 'Hijaluron 2%, gel crvenih algi, vitamin C, kolagen, elastin, lecitin' },
-    { name: 'Za Akne', nameEn: 'Acne Filler', formula: 'Hijaluron 2%', desc: 'Tretira upalne procese: elastin, kolagen i ekstrakti duda, kantariona i zobi.', ingredients: 'Hijaluron 2%, gel crvenih algi, elastin, kolagen, vitamin C, lecitin' },
-    { name: 'Eye Rescue', nameEn: 'Eye Rescue Filler', formula: 'Hijaluron 2%', desc: 'Izbeljivanje podočnjaka i kapaka — ekstrakt sladića i duda.', ingredients: 'Hijaluron 2%, gel crvenih algi, kolagen, vitamin C, lecitin' },
-    { name: 'Skin Relief', nameEn: 'Skin Relief Filler', formula: 'Hijaluron 2%', desc: 'Za reaktivnu kožu izloženu stresu: neven, kantarion i vučji trn umiruju i obnavljaju.', ingredients: 'Hijaluron 2%, gel crvenih algi, kolagen, vitamin C, lecitin, ekstrakti nevena' },
+    { name: 'Vitaminska Bomba', nameEn: 'Winner Filler',  desc: 'Efekat filera bez igle. Volumen, hidratacija i mladalački sjaj u jednom serumu.' },
+    { name: 'Anti-Age', nameEn: 'Anti Age Filler',  desc: 'Zategnutost, obnova i mladalački sjaj. Intenzivan anti-age filer sa hijaluronom i kolagenskim stimulatorima.'  },
+    { name: 'Duboka Hidratacija', nameEn: 'Hydrating filler',  desc: 'Molekularna voda za ćelije. Dubinska hidratacija. Volumen. Ravnoteža.'  },
+    { name: 'Za Akne', nameEn: 'Acne Filler',  desc: 'Balans bez isušivanja. Precizna terapija za akne, sebum i upale.'  },
+    { name: 'Eye Rescue', nameEn: 'Eye Rescue Filler',  desc: 'Osvežen pogled bez podočnjaka i otoka. Intenzivna nega za regiju oko očiju.'  },
+    { name: 'Skin Relief', nameEn: 'Skin Relief Filler',  desc: 'Brza pomoć za osetljivu i reaktivnu kožu. Umirenje, regeneracija i dubinska hidratacija.'  },
 ];
 
 const fillersEn = [
-    { name: 'Vitamin Bomb', nameEn: 'Winner Filler', formula: 'Hyaluronic 2%', desc: 'Vitamin cocktail: vitamin complex, elastin and algae extracts. Glow and youthful appearance.', ingredients: 'Hyaluronic 2%, vitamin complex with elastin and algae extracts' },
-    { name: 'Anti-Age', nameEn: 'Anti Age Filler', formula: 'Hyaluronic 5%', desc: 'The strongest filler — hyaluronic 5% and red algae gel. Fills wrinkles, lifting effect.', ingredients: 'Hyaluronic 5%, red algae gel' },
-    { name: 'Deep Hydration', nameEn: 'Hydrating Filler', formula: 'Hyaluronic 2%', desc: 'Intense hydration: collagen, elastin, vitamin C and oat, mallow and sea buckthorn extracts.', ingredients: 'Hyaluronic 2%, red algae gel, vitamin C, collagen, elastin, lecithin' },
-    { name: 'Acne Filler', nameEn: 'Acne Filler', formula: 'Hyaluronic 2%', desc: "Treats inflammatory processes: elastin, collagen and mulberry, St. John's wort and oat extracts.", ingredients: 'Hyaluronic 2%, red algae gel, elastin, collagen, vitamin C, lecithin' },
-    { name: 'Eye Rescue', nameEn: 'Eye Rescue Filler', formula: 'Hyaluronic 2%', desc: 'Under-eye and eyelid brightening — licorice and mulberry extract.', ingredients: 'Hyaluronic 2%, red algae gel, collagen, vitamin C, lecithin' },
-    { name: 'Skin Relief', nameEn: 'Skin Relief Filler', formula: 'Hyaluronic 2%', desc: "For reactive, stressed skin: calendula, St. John's wort and sea buckthorn soothe and restore.", ingredients: 'Hyaluronic 2%, red algae gel, collagen, vitamin C, calendula extracts' },
+    { name: 'Vitamin Bomb', nameEn: 'Winner Filler',   desc: 'A filler-like effect without needles. Volume, hydration, and a youthful glow in a single serum.'   },
+    { name: 'Anti-Age', nameEn: 'Anti Age Filler',   desc: 'Firmness, renewal, and a youthful glow. An intensive anti-age filler with hyaluronic acid and collagen stimulators.'    },
+    { name: 'Deep Hydration', nameEn: 'Hydrating Filler',   desc: 'Molecular water for your cells. Deep hydration. Volume. Balance.'   },
+    { name: 'Acne Filler', nameEn: 'Acne Filler',  desc: 'Balance without drying. A precise treatment for acne, sebum, and inflammation.'  },
+    { name: 'Eye Rescue', nameEn: 'Eye Rescue Filler',   desc: 'A refreshed look without dark circles and puffiness. Intensive care for the eye area.'   },
+    { name: 'Skin Relief', nameEn: 'Skin Relief Filler',  desc: 'Quick relief for sensitive and reactive skin. Soothing, regeneration, and deep hydration.'    },
 ];
 
 const stepsSr = [
@@ -133,13 +133,13 @@ export default function WinnerFileriPage() {
                                 <div className="bg-[#0A0A0A] border border-[#A07848]/25 hover:border-[#A07848]/50 p-8 group transition-all duration-300 h-full hover:shadow-md">
                                     <div className="flex items-start justify-between mb-6">
                                         <span className="text-[#A07848]/30 text-xs tracking-[0.3em]" style={{ fontFamily: 'var(--font-inter)' }}>0{i + 1}</span>
-                                        <span className="text-[10px] tracking-[0.2em] uppercase border border-[#A07848]/30 text-[#A07848] px-2 py-1" style={{ fontFamily: 'var(--font-inter)' }}>{filler.formula}</span>
+                                        
                                     </div>
                                     <h3 className="text-[#F5F0E8] text-2xl font-light uppercase tracking-wider mb-1" style={{ fontFamily: 'var(--font-cormorant)' }}>{filler.name}</h3>
                                     <p className="text-[#A07848] text-[11px] tracking-wider mb-4" style={{ fontFamily: 'var(--font-inter)' }}>{filler.nameEn}</p>
                                     <div className="h-[1px] w-8 bg-[#A07848]/50 group-hover:w-full mb-5 transition-all duration-500" />
                                     <p className="text-[#8A8A8A] text-sm font-light leading-relaxed mb-4" style={{ fontFamily: 'var(--font-inter)' }}>{filler.desc}</p>
-                                    <p className="text-[#6A6A6A] text-[11px] font-light leading-relaxed" style={{ fontFamily: 'var(--font-inter)' }}>{filler.ingredients}</p>
+                                    
                                 </div>
                             </Reveal>
                         ))}
